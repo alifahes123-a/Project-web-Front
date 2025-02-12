@@ -1,0 +1,145 @@
+body {
+    font-family: 'Courier New', Courier, monospace; /* Classic font */
+    background-color: #2d2d2d; /* Dark background */
+    color: #ffffff; /* Light text color */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Ensure the body takes up the full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #4b1b1b; /* Darker background for the header */
+    padding: 40px 0; /* Increased padding for a professional look */
+    width: 100%; /* Ensure it takes up the full width */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Center the header content */
+}
+
+.header-container {
+    text-align: center;
+    max-width: 1200px; /* Limit the maximum width */
+    padding: 0 20px; /* Add padding to the sides */
+}
+
+h1 {
+    font-size: 2.8rem; /* Slightly larger for emphasis */
+    color: #ffffff; /* White for main heading */
+    margin-bottom: 10px; /* Better spacing */
+    font-weight: 600; /* Semi-bold for a professional look */
+}
+
+/* 📌 Navigation Styles */
+nav {
+    margin-top: 20px;
+}
+
+.navbar {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between nav items */
+    background-color: #333; /* Dark background for the nav bar */
+    padding: 10px 0;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar li a {
+    color: #ffffff; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-weight: 500; /* Medium weight */
+    padding: 10px 20px;
+    border-radius: 6px; /* Rounded corners */
+    background-color: #333; /* Background for nav items */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.navbar li a:hover {
+    color: #1e90ff; /* Bright blue on hover */
+    background-color: #444; /* Slightly lighter background on hover */
+}
+
+/* 📌 Latest Trailers Section */
+h2 {
+    font-size: 2rem; /* Larger for subheadings */
+    margin-top: 20px;
+    color: #ffffff; /* White for subheadings */
+    font-weight: 500; /* Medium weight */
+}
+
+.latest-trailers {
+    padding: 20px;
+    max-width: 800px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the content */
+}
+
+.trailer {
+    margin-bottom: 30px; /* Space between trailers */
+    padding: 20px;
+    background-color: #3a3a3a; /* Slightly lighter background for trailers */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    text-align: center;
+}
+
+.trailer img {
+    width: 100%;
+    max-height: 240px;
+    object-fit: cover;
+    border-radius: 6px; /* Slightly rounded corners */
+    margin-bottom: 15px; /* Better spacing */
+}
+
+.trailer h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 10px; /* Better spacing */
+    font-weight: 600; /* Semi-bold for emphasis */
+}
+
+.trailer p {
+    font-size: 1rem;
+    color: #cccccc;
+    margin-bottom: 20px; /* Better spacing */
+}
+
+.watch-trailer-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #1e90ff; /* Bright blue for emphasis */
+    border: none;
+    border-radius: 6px; /* Slightly rounded corners */
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.watch-trailer-btn:hover {
+    background-color: #0073e6; /* Darker blue on hover */
+}
+
+/* 📌 Footer Styling */
+footer {
+    background-color: #4b1b1b; /* Darker background for the footer */
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Push the footer to the bottom */
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    color: #cccccc;
+}

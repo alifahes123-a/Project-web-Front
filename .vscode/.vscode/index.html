@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Trailer Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Trailer Hub</h1>
+            <p>Your go-to source for movie trailers!</p>
+            <!-- Navigation Links -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="latesReleases.html">Latest Releases</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Search bar section -->
+        <div id="search-container">
+            <input type="text" id="movie-search" placeholder="Search for a movie...">
+            <select id="search-type">
+                <option value="movie">Movie</option>
+                <option value="tv">TV Show</option>
+            </select>
+            <select id="genre">
+                <option value="">All Genres</option>
+                <!-- Genres will be populated dynamically -->
+            </select>
+            <input type="number" id="year" placeholder="Year (e.g., 2020)" min="1900" max="2024">
+            <button id="search-btn">Search</button>
+        </div>
+
+        <!-- Button to link to Contact Us page -->
+        <div class="contact-button-container">
+            <a href="contactUs.html" class="contact-btn">Contact Us</a>
+        </div>
+
+        <!-- Results grid for search results -->
+        <div id="results-grid"></div>
+        
+        <!-- Call to Action Section -->
+        <div class="call-to-action">
+            <h2>Discover the Latest Films!</h2>
+            <p>Explore our extensive collection of trailers and find your next favorite movie.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Trailer Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,369 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text color */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Ensure the body takes up the full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Allow the main content to grow and fill the available space */
+    padding: 20px;
+    max-width: 1200px; /* Limit the maximum width for larger screens */
+    margin: 0 auto; /* Center the content horizontally */
+    width: 100%; /* Ensure it takes up the full width */
+}
+
+header {
+    background-color: #1e1e1e; /* Darker background for the header */
+    padding: 40px 0; /* Increased padding for a professional look */
+    width: 100%; /* Ensure it takes up the full width */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.header-container {
+    text-align: center;
+    margin: 0 auto; /* Center the header content */
+    max-width: 1200px; /* Limit the maximum width */
+    padding: 0 20px; /* Add padding to the sides */
+}
+
+h1 {
+    font-size: 2.8rem; /* Slightly larger for emphasis */
+    color: #ffffff; /* White for main heading */
+    margin-bottom: 10px; /* Better spacing */
+    font-weight: 600; /* Semi-bold for a professional look */
+}
+
+h2 {
+    font-size: 2rem; /* Larger for subheadings */
+    margin-top: 20px;
+    color: #ffffff; /* White for subheadings */
+    font-weight: 500; /* Medium weight */
+}
+
+/* 📌 Navigation Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #ffffff; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-weight: 500; /* Medium weight */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+    color: #1e90ff; /* Bright blue on hover */
+}
+
+/* 📌 Search Bar */
+#search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px; /* Increased margin for better spacing */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+#movie-search {
+    padding: 10px;
+    width: 250px; /* Wider search box */
+    font-size: 14px;
+    border: 1px solid #444; /* Darker border */
+    border-radius: 6px; /* Slightly rounded corners */
+    background-color: #222; /* Dark input background */
+    color: #ffffff; /* White text in input */
+    transition: border-color 0.3s ease; /* Smooth transition for focus */
+}
+
+#movie-search:focus {
+    border-color: #1e90ff; /* Highlight when focused */
+    outline: none; /* Remove default outline */
+}
+
+#search-type, #genre {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #444; /* Darker border */
+    border-radius: 6px; /* Slightly rounded corners */
+    background-color: #222; /* Dark input background */
+    color: #ffffff; /* White text in input */
+    transition: border-color 0.3s ease; /* Smooth transition for focus */
+}
+
+#search-type:focus, #genre:focus {
+    border-color: #1e90ff; /* Highlight when focused */
+    outline: none; /* Remove default outline */
+}
+
+#year {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #444; /* Darker border */
+    border-radius: 6px; /* Slightly rounded corners */
+    background-color: #222; /* Dark input background */
+    color: #ffffff; /* White text in input */
+    transition: border-color 0.3s ease; /* Smooth transition for focus */
+}
+
+#year:focus {
+    border-color: #1e90ff; /* Highlight when focused */
+    outline: none; /* Remove default outline */
+}
+
+#search-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #1e90ff; /* Bright blue for emphasis */
+    color: #ffffff;
+    border: none;
+    border-radius: 6px; /* Slightly rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+#search-btn:hover {
+    background-color: #0073e6; /* Darker blue on hover */
+}
+
+/* 📌 Contact Button */
+.contact-button-container {
+    text-align: center;
+    margin: 30px 0; /* Increased margin for better spacing */
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #1e90ff; /* Bright blue for emphasis */
+    border: none;
+    border-radius: 6px; /* Slightly rounded corners */
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.contact-btn:hover {
+    background-color: #0073e6; /* Darker blue on hover */
+}
+
+/* 📌 Movie Results Grid */
+#results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+    width: 100%; /* Ensure it takes up the full width */
+    max-width: 1200px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the grid */
+}
+
+.movie-card {
+    background-color: #222;
+    padding: 20px; /* Increased padding for better spacing */
+    border-radius: 8px; /* Slightly rounded corners */
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    transition: transform 0.3s }
+    /* 📌 Movie Results Grid (continued) */
+.movie-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+.movie-card img {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 6px; /* Slightly rounded corners */
+}
+
+.movie-card h3 {
+    font-size: 1.3rem; /* Slightly larger for emphasis */
+    margin: 15px 0; /* Better spacing */
+    color: #ffffff;
+    font-weight: 500; /* Medium weight */
+}
+
+.movie-card p {
+    font-size: 0.9rem;
+    line-height: 1.5; /* Improved line height for readability */
+    margin-bottom: 15px; /* Better spacing */
+    color: #cccccc;
+}
+
+.watch-trailer-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #1e90ff; /* Bright blue for emphasis */
+    border: none;
+    border-radius: 6px; /* Slightly rounded corners */
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    width: 100%;
+}
+
+.watch-trailer-btn:hover {
+    background-color: #0073e6; /* Darker blue on hover */
+}
+
+/* 📌 Call to Action Section */
+.call-to-action {
+    text-align: center;
+    background-color: #222;
+    padding: 30px; /* Increased padding for better spacing */
+    border-radius: 8px; /* Slightly rounded corners */
+    margin: 20px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.call-to-action h2 {
+    font-size: 2rem; /* Larger for emphasis */
+    color: #ffffff;
+    margin-bottom: 10px; /* Better spacing */
+}
+
+.call-to-action p {
+    font-size: 1rem;
+    color: #cccccc;
+    margin: 10px 0;
+}
+
+/* 📌 Footer Styling */
+footer {
+    background-color: #1e1e1e; /* Darker background for the footer */
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Push the footer to the bottom */
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    color: #cccccc;
+}
+
+/* 📌 Contact Us Page Styling */
+.contact-info-section,
+.suggestions-form-section {
+    background-color: #222;
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    padding: 30px; /* Increased padding for better spacing */
+    margin: 20px auto;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* 📌 Contact Info */
+.contact-info {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin: 15px 0; /* Better spacing */
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.contact-info a {
+    color: #1e90ff; /* Bright blue for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.contact-info a:hover {
+    color: #0073e6; /* Darker blue on hover */
+}
+
+/* 📌 Form Styling */
+.form-group {
+    margin-bottom: 20px; /* Better spacing */
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px; /* Better spacing */
+    color: #ffffff;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444; /* Darker border */
+    border-radius: 6px; /* Slightly rounded corners */
+    background-color: #222; /* Dark input background */
+    color: #ffffff; /* White text in input */
+    transition: border-color 0.3s ease; /* Smooth transition for focus */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #1e90ff; /* Highlight when focused */
+    outline: none; /* Remove default outline */
+}
+
+textarea {
+    height: 120px; /* Slightly taller for better usability */
+}
+
+/* 📌 Submit Button */
+.submit-btn {
+    background-color: #1e90ff; /* Bright blue for emphasis */
+    color: #ffffff;
+    border: none;
+    border-radius: 6px; /* Slightly rounded corners */
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #0073e6; /* Darker blue on hover */
+}
+.navbar li {
+    display: inline;
+}
+
+.navbar li a {
+    color: #ffffff; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-weight: 500; /* Medium weight */
+    padding: 10px 20px;
+    border-radius: 6px; /* Rounded corners */
+    background-color: #333; /* Background for nav items */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.navbar li a:hover {
+    color: #1e90ff; /* Bright blue on hover */
+    background-color: #444; /* Slightly lighter background on hover */
+}

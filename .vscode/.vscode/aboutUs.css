@@ -1,0 +1,81 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    background-color: #1b263b; /* Dark blue background */
+    color: #ffffff; /* Light text color */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Ensure the body takes up the full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #2e4057; /* Darker blue for the header */
+    padding: 40px 0; /* Increased padding for a professional look */
+    width: 100%; /* Ensure it takes up the full width */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.header-container {
+    text-align: center;
+    margin: 0 auto; /* Center the header content */
+    max-width: 1200px; /* Limit the maximum width */
+    padding: 0 20px; /* Add padding to the sides */
+}
+
+h1 {
+    font-size: 2.8rem; /* Slightly larger for emphasis */
+    color: #ffffff; /* White for main heading */
+    margin-bottom: 10px; /* Better spacing */
+    font-weight: 600; /* Semi-bold for a professional look */
+}
+
+/* 📌 Navigation Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #ffffff; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-weight: 500; /* Medium weight */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+    color: #1e90ff; /* Bright blue on hover */
+}
+
+h2 {
+    font-size: 2rem; /* Larger for subheadings */
+    margin-top: 20px;
+    color: #ffffff; /* White for subheadings */
+    font-weight: 500; /* Medium weight */
+}
+
+.about-info {
+    padding: 20px;
+    max-width: 800px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the content */
+}
+
+footer {
+    background-color: #2e4057; /* Darker blue for the footer */
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Push the footer to the bottom */
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    color: #cccccc;
+}
